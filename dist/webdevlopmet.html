@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Lugrasimo&family=Nabla&family=Pirata+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+    <title>IOT TECH</title>
+    <style>
+        .layout {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="w-full">
+        <div class="flex justify-around bg-[#171717] text-white py-1">
+            <div class="flex">
+                <p class=" border-r pr-2 "><span class="mx-1" style='font-size:15px;'>&#9742;</span>7460033244</p>
+                <p class="px-2"><span>&#128231;</span> main@mail.com</p>
+            </div>
+            <div class="flex">
+                <a class="border-r px-2" href="/login">Login</a>
+                <a class="mx-2" href="/e-exam">E-Exam</a>
+            </div>
+        </div>
+
+        <div class="flex justify-around bg-[#E7E5E4]">
+            <div>
+                <img src="http://iottech.co.in/assets/img/logo.png" class="h-[50px] md:h-[80px]  py-2" alt="" srcset="">
+            </div>
+            <div class="flex justify-center items-center">
+                <button class="bg-[#15803D] text-white rounded-md px-4 py-2 hover:bg-[#166534] hidden md:block ">
+                    Verification &#x2192;
+                </button>
+                </a>
+            </div>
+
+        </div>
+        <!-- 1st image slioder -->
+
+
+
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 left-0 z-50">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="http://iottech.co.in/assets/img/logo.png" class="h-8" alt="Flowbite Logo" />
+
+                </a>
+                <button data-collapse-toggle="navbar-multi-level" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-multi-level" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                    <ul
+                        class="flex flex-col font-medium  p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-white hover:text-blue-500 rounded   md:p-0  "
+                                aria-current="page">HOME</a>
+                        </li>
+
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">ABOUT
+                                US <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar2"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="mission.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                            Mission</a>
+                                    </li>
+                                    <li>
+                                        <a href="chooseus.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why
+                                            Choose Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="team.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                            Team</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar8"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SERVICES<svg
+                                    class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar8"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 w-full"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="webdevlopmet.html"
+                                            class="flex px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                            Design & devlopment</a>
+                                    </li>
+                                    <li>
+                                        <a href="appdevlopment.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">App
+                                            Devlopment</a>
+                                    </li>
+                                    <li>
+                                        <a href="erpsoftware.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ERP
+                                            Software</a>
+                                    </li>
+                                    <li>
+                                        <a href="ecommerce.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ecommerce
+                                            Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="digitalmarketing.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital
+                                            Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="iotsmart.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">IOT
+                                            Smart Devices</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar9"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">STUDENT
+                                ZONE<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar9"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 w-full"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="newadmission.html"
+                                            class="flex px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">New
+                                            Admission</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Student
+                                            Verification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Student
+                                            Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Marksheet
+                                            Verifications</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar10"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">FRANCHISE<svg
+                                    class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar10"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 w-full"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="affliation-process.html"
+                                            class="flex px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Affliations
+                                            Process</a>
+                                    </li>
+                                    <li>
+                                        <a href="frenchise-apply.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Apply
+                                            Online</a>
+                                    </li>
+                                    <li>
+                                        <a href="center-verification.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Center
+                                            Verification</a>
+                                    </li>
+                                    <li>
+                                        <a href="get-frenchise.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Get
+                                            Franchise</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+
+
+
+
+
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">COURSES
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownLargeButton">
+
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Computer
+                                            Certificate Course<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="doubleDropdownButton">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">CCA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">DCA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">ADCA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">DOAP</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">System
+                                                        Manegement</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">HTML</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">DBMS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton1" data-dropdown-toggle="doubleDropdown1"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming
+                                            Course<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown1"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="doubleDropdownButton1">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">C
+                                                        Language</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">C++
+                                                        Language</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">JAVA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Python</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">PHP
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Google
+                                                        Map</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">CCC</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="contact..html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT
+                                US</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- whatsapp fixed -->
+        <div class="fixed top-40 right-0">
+            <div class="group">
+                <p class="p-2 bg-[#D97706] text-white cursor-pointer flex items-center transition-all">
+                    <span><i class="fa-brands fa-square-whatsapp text-green-600 text-2xl"></i></span>
+                    <span class="hidden group-hover:inline-block mx-2">Whatsapp</span>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- marque design -->
+        <p class="text-lg md:text-4xl font-bold text-center mx-auto my-6">Web Devlopment Courses</p>
+        <!-- text wrapper -->
+        <div class="mx-2 md:mx-20 bg-[#BAE6FD] rounded-t-md p-4">
+            <div class="flex flex-col md:flex-row">
+                <div id="sidebar" class="bg-white text-white p-4 md:w-[30%]">
+                    <h1 class="bg-white p-2 text-gray-800 font-semibold">Our Services</h1>
+                    <button onclick="showLayout(1)"
+                        class="mb-2 py-2 px-4 w-full bg-gray-700 hover:bg-yellow-800">HTML5</button>
+                    <button onclick="showLayout(2)"
+                        class="mb-2 py-2 px-4 w-full bg-gray-700 hover:bg-yellow-800">CSS3</button>
+                    <button onclick="showLayout(3)"
+                        class="mb-2 py-2 px-4 w-full bg-gray-700 hover:bg-yellow-800">C</button>
+                    <button onclick="showLayout(4)"
+                        class="mb-2 py-2 px-4 w-full bg-gray-700 hover:bg-yellow-800">C++</button>
+                    <button onclick="showLayout(5)"
+                        class="mb-2 py-2 px-4 w-full bg-gray-700 hover:bg-yellow-800">Javascript</button>
+                    <button onclick="showLayout(6)"
+                        class="py-2 px-4 w-full bg-gray-700 hover:bg-yellow-800">Python</button>
+                    <h1 class="bg-white p-2 text-gray-800 font-semibold mt-4">Contact Info</h1>
+                    <div class="mt-2">
+                        <p class="text-[#292524]">
+                            <span class="bg-blue-950 p-4 ">
+                                <i class="fa-solid fa-square-envelope text-white"></i>
+                            </span>
+                            info@example.com
+                        </p>
+                        <p class="mt-2 text-[#292524]">
+                            <span class="bg-blue-950 p-4 ">
+                                <i class="fa-solid fa-mobile-screen-button text-white"></i>
+                            </span>
+                            +91-7460033731
+                        </p>
+                        <p class="mt-8 text-[#292524]">
+                            <span class="bg-blue-950 p-4 ">
+                                <i class="fa-solid fa-location-dot text-white"></i>
+                            </span>
+                            66 Guild Street 512B, Great North
+                        </p>
+                    </div>
+                </div>
+                <div id="content" class="flex-grow p-4 md:w-[70%]">
+                    <div id="layout1" class="layout active">
+                        <!-- Layout 1 content -->
+                        <div class="flex flex-col justify-center items-center">
+                            <div>
+                                <img src="data:image/png;base64,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"
+                                    alt="">
+                            </div>
+                            <div class="reddit-mono2 space-y-2">
+                                <p>
+
+                                    HTML5 is the fifth and latest major version of the Hypertext Markup Language (HTML),
+                                    which is the standard language used for creating web pages and web applications. It
+                                    was developed by the World Wide Web Consortium (W3C) and the Web Hypertext
+                                    Application Technology Working Group (WHATWG), with contributions from various
+                                    individuals and organizations.
+                                </p>
+                                <p>
+                                    <strong> Multimedia Support:</strong> HTML5 includes native
+                                    support for audio and video playback
+                                    without the need for third-party plugins like Flash. It introduces the <audio> and
+                                        <video> elements for embedding media directly into web pages.
+                                </p>
+                                <p><strong>Canvas and SVG:</strong> HTML5 provides support for two-dimensional drawing
+                                    with the canava tag
+                                    element, allowing developers to create dynamic graphics, animations, and games
+                                    directly within the browser. It also includes support for Scalable Vector
+                                    Graphics (SVG) for creating vector-based graphics.</p>
+                                P -> Improved Semantics: New semantic elements such as
+                                header, "footer", "nav", "article", "section", and "aside" were introduced to provide
+                                clearer structure to web documents, making them more accessible
+                                to both humans and search engines.</p>
+                                <p>
+                                    <strong> Form Controls:</strong> HTML5 introduces new input types such as email,
+                                    url, tel, date,
+                                    number, range, color, and more, providing better support for form validation and
+                                    improving the user experience on mobile devices.
+                                </p>
+                                <p>
+                                    <strong>Offline Web Applications:</strong> HTML5 introduces technologies such as the
+                                    Application
+                                    Cache (AppCache) and Web Storage (localStorage and sessionStorage) that enable web
+                                    applications to work offline and store data locally on the user's device.
+                                </p>
+                                <p><strong>Geolocation API:</strong> HTML5 includes a Geolocation API that allows web
+                                    applications to retrieve the geographical location of a user's device.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="layout2" class="layout">
+                        <!-- Layout 2 content -->
+                        <div class="flex flex-col justify-center items-center ">
+                            <div>
+                                <img src="/dist/image/css.png" alt="">
+                            </div>
+                            <div class="reddit-mono2 space-y-3 ">
+                                <p>
+                                    CSS3, the latest version of Cascading Style Sheets, has become an integral part of
+                                    modern web development and plays a crucial role in various job roles within the
+                                    field. Here's how CSS3 is relevant to different positions
+                                </p>
+                                <p><strong>Front-end Developer:</strong> Front-end developers are responsible for
+                                    implementing the visual
+                                    and interactive elements of a website or web application. CSS3 is essential for
+                                    styling HTML elements, creating layouts, applying animations and transitions, and
+                                    ensuring responsiveness across different devices. Front-end developers need to have
+                                    a deep understanding of CSS3 features, such as flexbox, grid layout, media queries,
+                                    and CSS variables, to create visually appealing and user-friendly interfaces.
+
+                                </p>
+                                <p>
+                                    <strong> UI/UX Designer:</strong> UI/UX designers work closely with front-end
+                                    developers to create
+                                    engaging and intuitive user interfaces. CSS3 allows designers to bring their
+                                    creative vision to life by styling interface elements, defining typography,
+                                    specifying colors and gradients, and adding visual effects. A strong grasp of CSS3
+                                    capabilities and best practices is essential for UI/UX designers to effectively
+                                    communicate their designs to development teams and ensure consistent user
+                                    experiences across different platforms.
+                                </p>
+                                <p>
+                                    <strong>Web Developer:</strong> Web developers may specialize in front-end,
+                                    back-end, or full-stack
+                                    development. Regardless of their specialization, a solid understanding of CSS3 is
+                                    crucial for implementing designs, optimizing performance, and ensuring cross-browser
+                                    compatibility. Web developers use CSS3 to style user interfaces, create responsive
+                                    layouts, optimize loading times, and enhance the overall user experience.
+                                    Proficiency in CSS preprocessors like Sass or LESS and familiarity with CSS
+                                    frameworks like Bootstrap or Foundation can streamline development workflows and
+                                    improve code maintainability.
+                                </p>
+                                <p>
+                                    <strong> Graphic Designer:</strong> Graphic designers often collaborate with web
+                                    development teams to
+                                    create visually appealing graphics and multimedia content for websites and digital
+                                    platforms. While they primarily focus on creating static or interactive visual
+                                    elements using graphic design software, graphic designers should also have a basic
+                                    understanding of CSS3 to ensure that their designs are implemented accurately and
+                                    effectively on the web.
+                                </p>
+                                <p>
+                                    <strong>Digital Marketer: </strong>Digital marketers leverage CSS3 to optimize
+                                    website performance,
+                                    enhance user engagement, and improve conversion rates. They may use CSS3 to create
+                                    visually compelling landing pages, customize email templates, design banner ads, and
+                                    optimize website elements for search engine visibility and usability. Understanding
+                                    CSS3 allows digital marketers to collaborate more effectively with web development
+                                    teams and make data-driven decisions to improve online marketing campaigns.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="layout3" class="layout">
+                        <!-- Layout 3 content -->
+                        <div class="flex flex-col justify-center items-center ">
+                            <div>
+                                <img src="/dist/image/c.png" class="h-24 w-24 " alt="image">
+                            </div>
+                            <div class='reddit-mono2 space-y-4'>
+                                <p>
+                                    C, often referred to as C programming language, is a general-purpose programming
+                                    language originally developed by Dennis Ritchie at Bell Labs in the early 1970s. It
+                                    is one of the most widely used and influential programming languages in the history
+                                    of computing and has had a significant impact on the development of many other
+                                    programming languages.
+                                </p>
+                                <p>
+                                    <strong>Simplicity and Efficiency: </strong> C is designed to be a relatively simple
+                                    language with a
+                                    small set of keywords and constructs. It provides low-level access to memory and
+                                    hardware features, making it highly efficient and suitable for system programming,
+                                    embedded systems, and performance-critical applications.
+                                </p>
+                                <p>
+                                    <strong>Portability:</strong> C is a portable language, meaning that programs
+                                    written in C can be
+                                    compiled and run on different platforms with minimal changes. This portability is
+                                    achieved through the use of standard libraries and language features that abstract
+                                    away hardware-specific details.
+                                </p>
+                                <p>
+                                    <strong>Structured Programming:</strong> C supports structured programming
+                                    techniques, allowing
+                                    programmers to organize their code into functions, control structures (such as loops
+                                    and conditionals), and data structures (such as arrays and structs). This makes it
+                                    easier to write and maintain large-scale programs.
+                                </p>
+                                <p>
+                                    <strong>Powerful Features:</strong> Despite its simplicity, C provides powerful
+                                    features such as
+                                    pointers, which allow direct manipulation of memory addresses, and the ability to
+                                    perform low-level operations like bit manipulation and bitwise operations. These
+                                    features give C programmers fine-grained control over their programs but also
+                                    require careful handling to avoid bugs and security vulnerabilities.
+                                </p>
+                                <p>
+                                    <strong> Extensibility:</strong> C can be extended through the use of libraries and
+                                    modules written in
+                                    other languages, such as assembly language or higher-level languages like C++ or
+                                    Python. This allows developers to leverage existing code and libraries to enhance
+                                    the functionality of their C programs.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="layout4" class="layout">
+                        <!-- Layout 4 content -->
+                        <div class="flex flex-col justify-center items-center ">
+                            <div>
+                                <img src="/dist/image/c++.png " alt="image">
+                            </div>
+                            <div class="reddit-mono2">
+                                <p class="">
+
+                                    C++ is a general-purpose programming language that was developed as an extension of
+                                    the C programming language. It was first introduced by Bjarne Stroustrup in the
+                                    early 1980s at Bell Labs, and it has since become one of the most popular and widely
+                                    used programming languages in the world. Here are some key aspects of C++:
+                                </p>
+                                <p>
+                                    <strong>Object-Oriented Programming (OOP):</strong> C++ is a powerful
+                                    object-oriented programming
+                                    language, meaning it supports the principles of encapsulation, inheritance, and
+                                    polymorphism. Objects in C++ encapsulate data and behavior, allowing for the
+                                    creation of modular, reusable, and maintainable code.
+                                </p>
+                                <p>
+                                    <strong>Efficiency and Performance: </strong>Like its predecessor C, C++ is known
+                                    for its efficiency
+                                    and performance. It provides low-level control over hardware resources and memory
+                                    management while also offering high-level abstractions through features like
+                                    classes, templates, and standard libraries. This combination allows developers to
+                                    write code that is both efficient and expressive.
+                                </p>
+                                <p>
+                                    <strong>Rich Standard Library:</strong> C++ comes with a rich standard library that
+                                    provides a wide
+                                    range of functionality for common tasks such as input/output operations, string
+                                    manipulation, data structures (like vectors, lists, maps), algorithms, and more. The
+                                    Standard Template Library (STL) is a particularly powerful part of the C++ standard
+                                    library, offering generic algorithms and containers that can be used with any data
+                                    type.
+                                </p>
+                                <p>
+                                    <strong> Portability:</strong> C++ is a portable language, meaning that programs
+                                    written in C++ can be
+                                    compiled and run on different platforms with minimal changes. This portability is
+                                    achieved through the use of standard libraries and language features that abstract
+                                    away hardware-specific details.
+                                </p>
+                                <p>
+                                    <strong>Template Metaprogramming:</strong> C++ supports template metaprogramming,
+                                    which allows for
+                                    the generation of code at compile-time based on templates. This powerful feature
+                                    enables developers to write highly efficient and flexible code that can adapt to
+                                    different data types and requirements.
+                                </p>
+                                <p>
+                                    <strong>Wide Range of Applications:</strong> C++ is used in a wide range of
+                                    applications, including
+                                    system programming, game development, graphical user interfaces (GUIs),
+                                    high-performance computing, embedded systems, financial systems, and more. Its
+                                    versatility and efficiency make it suitable for projects ranging from small-scale
+                                    applications to large-scale software systems.
+                                </p>
+                                <p>
+                                    <strong>Standardization:</strong> C++ is standardized by the International
+                                    Organization for
+                                    Standardization (ISO), with the latest version being C++17 (as of my last update).
+                                    The C++ standard is continuously evolving, with new features and improvements being
+                                    added in each revision to make the language more powerful, expressive, and easier to
+                                    use.
+                                </p>
+                                <p class="mt-6 italic"> <strong class="text-red-600">Conclusion:</strong> Overall, C++
+                                    is a versatile and powerful programming language that offers a balance
+                                    between low-level control and high-level abstractions. Its support for
+                                    object-oriented programming, efficiency, rich standard library, and wide range of
+                                    applications make it a popular choice among developers for a variety of projects.
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="layout5" class="layout">
+                        <!-- Layout 5 content -->
+                        <div class="flex flex-col justify-content-center items-center ">
+                            <div>
+                                <img src="/dist/image/javascript.png " alt="">
+                            </div>
+                            <div class="reddit-mono2 space-y-4 ">
+                                <p>
+                                    JavaScript is a versatile programming language primarily used for adding
+                                    interactivity to web pages. It was created by Brendan Eich in 1995 while he was
+                                    working at Netscape Communications Corporation, originally under the name Mocha,
+                                    then briefly as LiveScript before finally being named JavaScript. Despite its name,
+                                    JavaScript has little to do with Java beyond syntactical similarities.
+                                </p>
+                                <p>
+                                    <strong>Client-Side Scripting:</strong> JavaScript is primarily used as a
+                                    client-side scripting
+                                    language, meaning it runs in the user's web browser rather than on a server. It is
+                                    embedded directly into HTML documents and interpreted by the browser to manipulate
+                                    the Document Object Model (DOM), handle events, validate forms, create animations,
+                                    and perform other dynamic tasks, making web pages interactive and responsive.
+                                </p>
+                                <p><strong>Cross-Platform Compatibility:</strong> JavaScript is supported by all modern
+                                    web browsers, including Chrome, Firefox, Safari, Edge, and others. This
+                                    cross-browser compatibility allows developers to write JavaScript code that works
+                                    consistently across different platforms and devices.
+                                </p>
+                                <p>
+                                    <strong>Dynamic Typing:</strong> JavaScript is a dynamically typed language, which
+                                    means that
+                                    variable types are determined at runtime rather than statically at compile-time.
+                                    This flexibility allows for rapid prototyping and simplifies development but may
+                                    also lead to runtime errors if not handled properly.
+                                </p>
+                                <p>
+                                    <strong>Object-Oriented:</strong> JavaScript is a prototype-based object-oriented
+                                    language, meaning
+                                    objects can be created directly from other objects without the need for classes.
+                                    Objects in JavaScript can have properties and methods, and inheritance is achieved
+                                    through prototype chaining.
+                                </p>
+                                <p>
+                                    <strong> Functional Programming Features:</strong> JavaScript supports functional
+                                    programming
+                                    paradigms, such as higher-order functions, first-class functions, and closures.
+                                    These features enable developers to write more concise and expressive code and
+                                    facilitate the development of modular and reusable components.
+                                </p>
+                                <p>
+                                    <strong> Asynchronous Programming: </strong>JavaScript uses an event-driven,
+                                    non-blocking I/O model,
+                                    allowing it to handle asynchronous operations efficiently. This is particularly
+                                    useful for tasks such as fetching data from servers, processing user input, and
+                                    performing animations without blocking the main execution thread.
+                                </p>
+                                <p>
+                                    <strong>Server-Side Development: </strong>In addition to client-side scripting,
+                                    JavaScript is also
+                                    used for server-side development with platforms like Node.js. Node.js allows
+                                    developers to build scalable and high-performance web applications entirely in
+                                    JavaScript, both on the client and server sides, using the same language and
+                                    ecosystem.
+                                </p>
+                                <p class="mt-6">
+                                    <strong class="text-red-600 italic">Conslusion:</strong>
+                                    JavaScript's versatility, ubiquity, and constantly evolving ecosystem make it a
+                                    fundamental technology for web development and beyond. Its ability to handle both
+                                    client-side and server-side tasks, along with its rich ecosystem of libraries and
+                                    frameworks, has solidified its position as one of the most widely used programming
+                                    languages in the world.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="layout6" class="layout">
+                        <!-- Layout 5 content -->
+
+                        <div class="flex flex-col justify-centyer items-center ">
+                            <div>
+                                <img src="/dist/image/python.png " alt="python">
+                            </div>
+                            <div class="reddit-mono2 space-y-4">
+                                <p>
+                                    Python is a high-level, interpreted programming language known for its simplicity,
+                                    readability, and versatility. It was created by Guido van Rossum and first released
+                                    in 1991. Python's design philosophy emphasizes code readability and a clean syntax,
+                                    making it an excellent choice for beginners and experienced developers alike.
+                                </p>
+                                <p>
+                                    <strong>Simple and Readable Syntax:</strong> Python's syntax is designed to be
+                                    straightforward and
+                                    easy to understand, with a minimalistic and consistent structure. This readability
+                                    not only makes it easier for developers to write code but also facilitates
+                                    collaboration and code maintenance.
+
+                                </p>
+                                <p>
+                                    <strong>Interpreted and Interactive:</strong> Python is an interpreted language,
+                                    meaning that code is
+                                    executed line by line by an interpreter rather than compiled into machine code. This
+                                    allows for rapid development and prototyping, as developers can quickly test and
+                                    iterate on code in an interactive environment like the Python shell or Jupyter
+                                    Notebooks.
+                                </p>
+                                <p>
+                                    <strong> Multiparadigm:</strong> Python supports multiple programming paradigms,
+                                    including procedural,
+                                    object-oriented, and functional programming styles. This versatility allows
+                                    developers to choose the most appropriate approach for solving a particular problem,
+                                    making Python suitable for a wide range of applications and domains.
+                                </p>
+                                <p>
+                                    <strong>Rich Standard Library:</strong> Python comes with a comprehensive standard
+                                    library that
+                                    provides modules and functions for performing common tasks such as file I/O, string
+                                    manipulation, networking, database access, and more. This extensive library reduces
+                                    the need for external dependencies and simplifies development by providing reusable
+                                    components out of the box.
+                                </p>
+                                <p>
+                                    <strong>Large Ecosystem of Packages:</strong> In addition to the standard library,
+                                    Python has a vast
+                                    ecosystem of third-party packages and libraries available through the Python Package
+                                    Index (PyPI). These packages cover a wide range of domains, including data science,
+                                    web development, machine learning, scientific computing, artificial intelligence,
+                                    and more. Popular packages include NumPy, pandas, Django, Flask, TensorFlow, and
+                                    scikit-learn, among others.
+                                </p>
+                                <p>
+                                    <strong class="text-red-600 italic">Conclusion:</strong>
+                                    Overall, Python's simplicity, readability, versatility, and extensive ecosystem make
+                                    it a powerful and popular programming language for a wide range of applications and
+                                    industries. Its ease of learning and broad adoption have contributed to its status
+                                    as one of the most widely used programming languages in the world.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-gray-400">
+        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="sm:col-span-2">
+                <a href="#" class="inline-flex items-center">
+                    <img src="http://iottech.co.in/assets/img/logo.png" alt="logo" class="h-8 w-18 ">
+                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800">IOT Tech</span>
+                </a>
+                <div class="mt-6 lg:max-w-xl">
+                    <p class="text-sm text-gray-800">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis mi, faucibus dignissim
+                        lorem
+                        id, imperdiet interdum mauris. Vestibulum ultrices sed libero non porta. Vivamus malesuada urna
+                        eu
+                        nibh malesuada, non finibus massa laoreet. Nunc nisi velit, feugiat a semper quis, pulvinar id
+                        libero. Vivamus mi diam, consectetur non orci ut, tincidunt pretium justo. In vehicula porta
+                        molestie. Suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2 text-sm">
+                <p class="text-base font-bold tracking-wide text-gray-900">Popular Courses</p>
+                <a href="#">Computer Course</a>
+                <a href="#">Software Solutions</a>
+                <a href="#">Other</a>
+                <p class="text-base font-bold tracking-wide text-gray-900">Popular Topics</p>
+                <a href="#">Human Resource Management</a>
+                <a href="#">Operations Management</a>
+                <a href="#">Marketing Management</a>
+            </div>
+
+            <div>
+                <p class="text-base font-bold tracking-wide text-gray-900">COMPANY IS ALSO AVAILABLE ON</p>
+                <div class="flex items-center gap-1 px-2">
+                    <a href="#" class="w-full min-w-xl">
+                        <img src="https://mcqmate.com/public/images/icons/playstore.svg" alt="Playstore Button"
+                            class="h-10">
+                    </a>
+                    <a class="w-full min-w-xl" href="https://www.youtube.com/channel/UCo8tEi6SrGFP8XG9O0ljFgA">
+                        <img src="https://mcqmate.com/public/images/icons/youtube.svg" alt="Youtube Button"
+                            class="h-28">
+                    </a>
+                </div>
+                <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+                <div class="flex">
+                    <p class="mr-1 text-gray-800">Email:</p>
+                    <a href="#" title="send email">admin@company.com</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+            <p class="text-sm text-gray-600">© Copyright 2023 Company. All rights reserved.</p>
+            <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+                <li>
+                    <a href="#"
+                        class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
+                        &amp; Cookies Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Disclaimer
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <script>
+        function showLayout(layoutNumber) {
+            // Hide all layouts
+            var layouts = document.getElementsByClassName("layout");
+            for (var i = 0; i < layouts.length; i++) {
+                layouts[i].classList.remove("active");
+            }
+
+            // Show the selected layout
+            var selectedLayout = document.getElementById("layout" + layoutNumber);
+            selectedLayout.classList.add("active");
+        }
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

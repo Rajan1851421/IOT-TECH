@@ -1,0 +1,44 @@
+.relative:hover .absolute {
+    opacity: 1;
+    pointer-events: auto;
+}
+@keyframes marquee {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+.marquee {
+    animation: marquee 10s linear infinite; /* Adjust the duration (10s) to change speed */
+}
+
+
+.roboto-mono{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/* why choose us  */
+.purple_border {
+    box-shadow: 4px 4px 1px rgb(126, 34, 206);
+}
+
+.black_border {
+    box-shadow: 4px 4px 1px rgb(0, 0, 0);
+}
+
+.reddit-mono {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .reddit-mono2 {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  strong{
+    font-weight: 800;
+  }

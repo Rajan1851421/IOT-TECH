@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>IOT TECH</title>
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="w-full">
+        <div class="flex justify-around bg-[#171717] text-white py-1">
+            <div class="flex">
+                <p class=" border-r pr-2 "><span class="mx-1" style='font-size:15px;'>&#9742;</span>7460033244</p>
+                <p class="px-2"><span>&#128231;</span> main@mail.com</p>
+            </div>
+            <div class="flex">
+                <a class="border-r px-2" href="student-login.html">Login</a>
+                <a class="mx-2" href="/e-exam">E-Exam</a>
+                <div class=" ml-2 md:ml-8">
+                    <a target="_blank" href="https://wa.me/7460033731">
+                        <i class="fa-brands fa-whatsapp mx-1 text-white "></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f mx-1 text-white"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fa-brands fa-youtube mx-1 text-white "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-around bg-[#E7E5E4]">
+            <div>
+                <img src="http://iottech.co.in/assets/img/logo.png" class="h-[50px] md:h-[80px]  py-2" alt="" srcset="">
+            </div>
+            <div class="flex justify-center items-center ">
+
+                <a href="student_verification.html"
+                    class="bg-[#15803D] text-white rounded-md px-4 py-2 hover:bg-[#166534] hidden md:block ">
+                    Verification &#x2192;
+                </a>
+
+            </div>
+
+        </div>
+        <!-- 1st image slioder -->
+        <div>
+            <div class="relative w-full glide-02">
+                <!-- Slides -->
+                <div class="overflow-hidden h-96" data-glide-el="track">
+                    <ul
+                        class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                        <li><img src="https://Tailwindmix.b-cdn.net/image-03.jpg"
+                                class="w-full max-w-full max-h-full m-auto" />1</li>
+                        <li><img src="https://Tailwindmix.b-cdn.net/image-04.jpg"
+                                class="w-full max-w-full max-h-full m-auto" />2</li>
+                        <li><img src="https://Tailwindmix.b-cdn.net/image-05.jpg"
+                                class="w-full max-w-full max-h-full m-auto" />3</li>
+                        <li><img src="https://Tailwindmix.b-cdn.net/image-01.jpg"
+                                class="w-full max-w-full max-h-full m-auto" />4</li>
+                        <li><img src="https://Tailwindmix.b-cdn.net/image-02.jpg"
+                                class="w-full max-w-full max-h-full m-auto" />5</li>
+                    </ul>
+                </div>
+                <!-- Indicators -->
+                <div class="absolute bottom-0 flex items-center justify-center w-full gap-2"
+                    data-glide-el="controls[nav]">
+                    <button class="p-4 group" data-glide-dir="=0" aria-label="goto slide 1"><span
+                            class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                    <button class="p-4 group" data-glide-dir="=1" aria-label="goto slide 2"><span
+                            class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                    <button class="p-4 group" data-glide-dir="=2" aria-label="goto slide 3"><span
+                            class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                    <button class="p-4 group" data-glide-dir="=3" aria-label="goto slide 4"><span
+                            class="block w-2 h-2 transition-colors duration-300 rounded-full ring-1 ring-slate-700 bg-white/20 focus:outline-none"></span></button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky top-0 left-0 z-50">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">               
+                <button data-collapse-toggle="navbar-multi-level" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-multi-level" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                    <ul
+                        class="flex flex-col font-medium  p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3 text-white hover:text-blue-500 rounded   md:p-0  "
+                                aria-current="page">HOME</a>
+                        </li>
+                        <li>
+                            <a href="blog.html"
+                                class="block py-2 px-3 text-white hover:text-blue-500 rounded   md:p-0  "
+                                aria-current="page">BLOG</a>
+                        </li>
+
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">ABOUT
+                                US <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar2"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="mission.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                            Mission</a>
+                                    </li>
+                                    <li>
+                                        <a href="chooseus.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Why
+                                            Choose Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="team.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                                            Team</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar8"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SERVICES<svg
+                                    class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar8"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 w-full"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="webdevlopmet.html"
+                                            class="flex px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                            Design & devlopment</a>
+                                    </li>
+                                    <li>
+                                        <a href="appdevlopment.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">App
+                                            Devlopment</a>
+                                    </li>
+                                    <li>
+                                        <a href="erpsoftware.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ERP
+                                            Software</a>
+                                    </li>
+                                    <li>
+                                        <a href="ecommerce.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ecommerce
+                                            Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="digitalmarketing.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Digital
+                                            Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="iotsmart.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">IOT
+                                            Smart Devices</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar9"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">STUDENT
+                                ZONE<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar9"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 w-full"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="newadmission.html"
+                                            class="flex px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">New
+                                            Admission</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Student
+                                            Verification</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Student
+                                            Login</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Marksheet
+                                            Verifications</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar10"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">FRANCHISE<svg
+                                    class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar10"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-56 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 w-full"
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="affliation-process.html"
+                                            class="flex px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Affliations
+                                            Process</a>
+                                    </li>
+                                    <li>
+                                        <a href="frenchise-apply.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Apply
+                                            Online</a>
+                                    </li>
+                                    <li>
+                                        <a href="center-verification.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Center
+                                            Verification</a>
+                                    </li>
+                                    <li>
+                                        <a href="get-frenchise.html"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Get
+                                            Franchise</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+
+
+
+
+
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">COURSES
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownLargeButton">
+
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Computer
+                                            Certificate Course<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="doubleDropdownButton">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">CCA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">DCA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">ADCA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">DOAP</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">System
+                                                        Manegement</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">HTML</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">DBMS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li aria-labelledby="dropdownNavbarLink">
+                                        <button id="doubleDropdownButton1" data-dropdown-toggle="doubleDropdown1"
+                                            data-dropdown-placement="right-start" type="button"
+                                            class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Programming
+                                            Course<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg></button>
+                                        <div id="doubleDropdown1"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="doubleDropdownButton1">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">C
+                                                        Language</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">C++
+                                                        Language</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">JAVA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Python</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">PHP
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Google
+                                                        Map</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">CCC</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="contact..html"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT
+                                US</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- whatsapp fixed -->
+        <div class="fixed top-40 right-0">
+            <div class="group">
+                <p class="p-2 bg-[#D97706] text-white cursor-pointer flex items-center transition-all">
+                    <span><i class="fa-brands fa-square-whatsapp text-green-600 text-2xl"></i></span>
+                    <span class="hidden group-hover:inline-block mx-2">Whatsapp</span>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- marque design -->
+        <p class="text-lg md:text-4xl font-bold text-center mx-auto my-6">Welocme to IOT Technology</p>
+        <div class="mx-2 md:mx-36 bg-[#BAE6FD] rounded-t-md">
+            <div class="flex flex-col md:flex-row justify-evenly ">
+                <div class="w-full md:w-[60%]">
+                    <p class="py-4 pl-6 pr-2  text-justify mt-4">India has one of the largest and diverse education
+                        systems in
+                        the world. Privatization, widespread expansion, increased autonomy and introduction of
+                        Programmes in new and emerging areas have improved access to higher education. At the same time,
+                        it has also led to widespread concern on the quality and relevance of the higher education. To
+                        address these concerns, the National Policy on Education (NPE, 1986) and the Programme of Action
+                        (PoA, 1992) spelt out strategic plans for the policies, advocated the establishment of an
+                        independent National accreditation agency. Consequently, the National Assessment and
+                        Accreditation Council (NAAC) was established in 1994 as an autonomous institution of the
+                        University Grants Commission (UGC) with its Head Quarter in Bengaluru. The mandate of NAAC as
+                        reflected in its vision statement is in making quality assurance an integral part of the
+                        functioning of Higher Education Institutions (HEIs). <br>
+                        The NAAC functions through its General Council (GC) and Executive Committee (EC) comprising
+                        educational administrators, policy makers and senior academicians from a cross-section of Indian
+                        higher education system. The Chairperson of the UGC is the President of the GC of the NAAC, the
+                        Chairperson of the EC is an eminent academician nominated by the President of GC (NAAC). The
+                        Director is the academic and administrative head of NAAC and is the member-secretary of both the
+                        GC and the EC. In addition to the statutory bodies that steer its policies and core staff to
+                        support its activities NAAC is advised by the advisory and consultative committees constituted
+                        from time to time.
+                    </p>
+
+                </div>
+                <div class="w-full md:w-[40%]">
+                    <div class="flex justify-center items-center mt-8">
+                        <div class="flex gap-2">
+                            <div class="bg-black py-1 px-4 rounded-md">
+                                <i class="fa-brands fa-youtube text-red-600 text-center text-xl"></i>
+                                <p class="text-[#FEF08A] text-center font-bold">IOT</p>
+                            </div>
+                            <div class="bg-black py-1 px-4 rounded-md">
+                                <i class="fa-brands fa-square-facebook text-[#1D4ED8] text-center text-xl"></i>
+                                <p class="text-[#FEF08A] text-center font-bold">IOT</p>
+                            </div>
+                            <div class="bg-black py-1 px-4 rounded-md">
+                                <i class="fa-brands fa-square-twitter text-[#1D4ED8] text-center text-xl"></i>
+                                <p class="text-[#FEF08A] text-center font-bold">IOT</p>
+                            </div>
+                            <div>
+                                <img src="http://naac.gov.in/images/docs/naac_25/naac-sj-logo.png" class="h-16" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="w-full flex justify-center items-center mt-5 ">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/p-9D570FC4A" frameborder="0"
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div class="w-full flex justify-center items-center mt-5">
+                        <h1 class="bg-blue-600 p-2 bg-opacity-50 font-semibold text-[#1E1B4B] ">Video Tutorial</h1>
+                    </div>
+                    <div class="mt-2 ml-8 underline text-[#2563EB]">
+                        <li>
+                            <a href="">News Letter jan 2024</a>
+                        </li>
+                        <li>
+                            <a href="">News Letter jan 2023</a>
+                        </li>
+                        <li>
+                            <a href="">News Letter jan 2021</a>
+                        </li>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="mx-2 md:mx-36  rounded-t-md">
+            <marquee behavior="smooth" direction="left" class="bg-[#0284C7] rounded-t-md p-2 font-bold text-white ">
+                <span class="mx-2 px-4 my-2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed,
+                    blanditiis.</span>
+            </marquee>
+            <div class="flex flex-col md:flex-row justify-evenly mt-[-15px] ">
+                <div class="w-full md:w-[65%] bg-[#BAE6FD] py-2 ">
+                    <div class="px-2">
+                        <h1 class="bg-blue-600 p-2 bg-opacity-50 font-semibold text-[#1E1B4B] ">Announcement</h1>
+                    </div>
+                    <marquee class="mx-4 h-36 " behavior="smooth" direction="up">
+                        <p class="text-[#4341d5] flex justify-start items-center"><span>1:</span> <span><img class="h-4"
+                                    src="http://naac.gov.in/images/new.gif" alt=""></span>Lorem rajn dolor sit amet.</p>
+                        <p class="text-[#4341d5] flex justify-start items-center"><span>1:</span> <span><img class="h-4"
+                                    src="http://naac.gov.in/images/new.gif" alt=""></span>Lorem rajn dolor sit amet.</p>
+
+                    </marquee>
+
+                    <div class="p-2">
+                        <h1 class="bg-blue-600 p-2 bg-opacity-50 font-semibold text-[#1E1B4B] ">Notifications</h1>
+                    </div>
+                    <marquee class="mx-4 h-36 " behavior="smooth" direction="up">
+                        <p class="text-[#4341d5] flex justify-start items-center"><span>1:</span> <span><img class="h-4"
+                                    src="http://naac.gov.in/images/new.gif" alt=""></span>Lorem rajn dolor sit amet.</p>
+                        <p class="text-[#4341d5] flex justify-start items-center"><span>1:</span> <span><img class="h-4"
+                                    src="http://naac.gov.in/images/new.gif" alt=""></span>Lorem rajn dolor sit amet.</p>
+
+                    </marquee>
+
+                    <div class="p-2">
+                        <h1 class="bg-blue-600 p-2 bg-opacity-50 font-semibold text-[#1E1B4B] ">Guidelines</h1>
+                    </div>
+                    <marquee class="mx-4 h-36 " behavior="smooth" direction="up">
+                        <p class="text-[#86198F] flex justify-start items-center"><span>1:</span> <span><img class="h-4"
+                                    src="http://naac.gov.in/images/new.gif" alt=""></span>Lorem rajn dolor sit amet.</p>
+                        <p class="text-[#86198F] flex justify-start items-center"><span>1:</span> <span><img class="h-4"
+                                    src="http://naac.gov.in/images/new.gif" alt=""></span>Lorem rajn dolor sit amet.</p>
+                    </marquee>
+
+
+
+                </div>
+                <div class="w-full md:w-[35%] max-h-full bg-[#93C5FD]">
+                    <div class="text-white font-bold mt-4 p-2">
+                        <p>General Queries</p>
+                        <p class="text-black">15256355653565</span>
+                        <p>Call Center/FMC</p>
+                        <p class="text-black">15256355653565</span><br>
+                            <span class="bg-[#E7E5E4] px-1 py-1  my-2 font-normal ">nomil@mail.com</span>
+                        <p class="text-black">All registered users of NAAC are requested to use only <span
+                                class="bg-white ">Support/Helpdesk (in portal)</span> for
+                            reporting any kind of queries/issues
+                        </p>
+                        <p class="mt-4"> Call Centre Timing</p>
+                        <p class="font-normal text-black">
+                            9.15 am to 1:00 pm and 1:30 pm to 5.45 pm on all days except Saturdays, Sundays and
+                            government holidays
+                        </p>
+                        <div class="flex justify-evenly items-center mt-2 md:mt-8">
+                            <div>
+                                <img class="h-20" src="http://naac.gov.in/images/apply_online.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <button class="bg-blue-800 px-4 py-2 ">Status</button>
+                                <button class="bg-blue-800 px-4 py-2 mt-2 ">Result</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+    <footer class="px-3 pt-4 lg:px-9 border-t-2 bg-gray-400">
+        <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+
+            <div class="sm:col-span-2">
+                <a href="#" class="inline-flex items-center">
+                    <img src="http://iottech.co.in/assets/img/logo.png" alt="logo" class="h-8 w-18 ">
+
+                </a>
+                <div class="mt-6 lg:max-w-xl">
+                    <p class="text-sm text-gray-800">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis mi, faucibus dignissim
+                        lorem
+                        id, imperdiet interdum mauris. Vestibulum ultrices sed libero non porta. Vivamus malesuada urna
+                        eu
+                        nibh malesuada, non finibus massa laoreet. Nunc nisi velit, feugiat a semper quis, pulvinar id
+                        libero. Vivamus mi diam, consectetur non orci ut, tincidunt pretium justo. In vehicula porta
+                        molestie. Suspendisse potenti.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-2 text-sm">
+                <p class="text-base font-bold tracking-wide text-gray-900">Popular Courses</p>
+                <a href="#">Computer Course</a>
+                <a href="#">Software Solutions</a>
+                <a href="#">Other</a>
+                <p class="text-base font-bold tracking-wide text-gray-900">Popular Topics</p>
+                <a href="#">Human Resource Management</a>
+                <a href="#">Operations Management</a>
+                <a href="#">Marketing Management</a>
+            </div>
+
+            <div>
+                <p class="text-base font-bold tracking-wide text-gray-900">COMPANY IS ALSO AVAILABLE ON</p>
+                <div class="flex items-center gap-1 px-2">
+                    <a href="#" class="w-full min-w-xl">
+                        <img src="https://mcqmate.com/public/images/icons/playstore.svg" alt="Playstore Button"
+                            class="h-10">
+                    </a>
+                    <a class="w-full min-w-xl" href="https://www.youtube.com/channel/UCo8tEi6SrGFP8XG9O0ljFgA">
+                        <img src="https://mcqmate.com/public/images/icons/youtube.svg" alt="Youtube Button"
+                            class="h-28">
+                    </a>
+                </div>
+                <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+                <div class="flex">
+                    <p class="mr-1 text-gray-800">Email:</p>
+                    <a href="#" title="send email">admin@company.com</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
+            <p class="text-sm text-gray-600">© Copyright 2023 Company. All rights reserved.</p>
+            <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+                <li>
+                    <a href="#"
+                        class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
+                        &amp; Cookies Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Disclaimer
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
